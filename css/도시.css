@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body,
+html {
+  background-color: hsl(0, 0%, 5%);
+}
+/* container */
+.box {
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  background-color: hwb(171 55% 15% / 0.894);
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* title */
+.title {
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* dropDown */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.dropbtn_click {
+  background-color: transparent;
+  border: transparent;
+}
+.dropdown-label {
+  font-size: 12px;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(50, 50, 50);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  display: block;
+  border: 2px solid rgb(94, 94, 94);
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  font-weight: 400;
+  color: rgb(124, 124, 124);
+  padding: 12px;
+  width: 240px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 12px;
+  z-index: 1;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  font-weight: 400;
+  background-color: #fcfcfc;
+  min-width: 240px;
+  border-radius: 8px;
+  height: 160px;
+  overflow: scroll;
+  box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
+  position: absolute;
+}
+.dropdown-content::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgb(194, 194, 194);
+}
+
+.dropdown-content div:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.dropdown-content.show {
+  display: block;
+}
+/* container */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 60%;
+}
+.box > h2 {
+  padding: 40px;
+  font-size: 40px;
+}
+.container p {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  color: white;
+}
+#icon {
+  width: 250px;
+  margin-top: 50px;
+}
+spen {
+  font-size: 25px;
+  color: white;
+}

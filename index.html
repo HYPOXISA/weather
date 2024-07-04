@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>last날씨 정보</title>
+    <link rel="stylesheet" href="css/결합.css" />
+    <link href="css/star2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 배경 -->
+    <div class="star">
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+      <div class="shooting_star"></div>
+    </div>
+    <!-- // 배경 -->
+
+    <div class="all">
+      <h1>날씨 정보</h1>
+      <!-- 서치 -->
+      <div class="search">
+        <input type="text" placeholder="Search City Name!" spellcheck="false" />
+        <button><img src="images/search.png" alt="search" /></button>
+      </div>
+      <!-- // 서치 -->
+      <div id="buttons">
+        <button onclick="getCurrentLocationWeather()">현재 위치</button>
+        <button onclick="getWeather('Seoul')">서울</button>
+        <button onclick="getWeather('Busan')">부산</button>
+        <button onclick="getWeather('Incheon')">인천</button>
+        <!-- 필요에 따라 더 많은 도시를 추가하세요 -->
+      </div>
+      <div id="weatherInfo">
+        <!-- 에러 문구 -->
+        <div class="error">
+          <p>유효하지 않습니다! 다시 한 번 확인해주세요.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/obfuscated.js"></script>
+    <script src="js/결합.js"></script>
+  </body>
+</html>
